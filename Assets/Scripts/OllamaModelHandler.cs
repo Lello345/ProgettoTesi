@@ -7,7 +7,7 @@ public class OllamaModelHandler : MonoBehaviour
 {
     [Header("Configurazione Ollama")]
     [SerializeField] private string ollamaUrl = "http://localhost:11434/api/generate";
-    [SerializeField] private string modelName = "llama3"; // Es: llama3, phi3, gemma, qwen2
+    [SerializeField] private string modelName = "llama3.2"; // Es: llama3, phi3, gemma, qwen2
 
     // Struttura dati interna per mappare la risposta nativa del server di Ollama
     [System.Serializable]

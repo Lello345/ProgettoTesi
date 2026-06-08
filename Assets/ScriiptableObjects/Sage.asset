@@ -17,9 +17,9 @@ MonoBehaviour:
     intrecciata con fili d'erba e radici secche. I suoi occhi sono completamente
     bianchi, ciechi alla vista normale ma capaci di percepire l'energia vitale (il
     \"Mana\") del mondo. indossa una veste logora di corteccia e canapa.\n\nLuogo:
-    Vive all'interno del tronco di un gigantesco albero millenario millenario (Il
-    Cuore del Bosco) ai confini del regno.\n\nStoria e Segreti (Background)\nIl Passato:
-    Un tempo Elion era il Primo Mago del reame, ma secoli fa scelse l'esilio quando
+    Vive all'interno del tronco di un gigantesco albero millenario (Il Cuore del
+    Bosco) ai confini del regno.\n\nStoria e Segreti (Background)\nIl Passato: Un
+    tempo Elion era il Primo Mago del reame, ma secoli fa scelse l'esilio quando
     cap\xEC che la civilt\xE0 stava distruggendo l'equilibrio naturale per brama
     di potere.\n\nIl Segreto: Custodisce l'ultimo frammento della Pietra dell'Eclissi,
     un artefatto in grado di spegnere la magia nel mondo. Nessuno sa che la pietra
@@ -44,4 +44,4 @@ MonoBehaviour:
     \"player_choices\": [\n    \"Cerco la tua saggezza, Elion. Il mondo l'\xE0 fuori
     \xE8 in pericolo.\",\n    \"Sto solo esplorando questi boschi, non volevo disturbarti.\",\n   
     \"Sei tu il vecchio che sa come curare la Peste Grigia?\"\n  ]\n}"
-  dialogueStrategy: {fileID: 11400000, guid: 5fd571861128dd84bad93bdd62d137fa, type: 2}
+  dialogueStrategy: {fileID: 11400000, guid: 5d9128afa11e452449cb894f668ea1c3, type: 2}

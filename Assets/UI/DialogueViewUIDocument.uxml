@@ -1,6 +1,6 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI/DialogueViewUSS.uss?fileID=7433441132597879392&amp;guid=ca8ecda679571de40bb0d2202f02175b&amp;type=3#DialogueViewUSS"/>
-    <ui:VisualElement name="Wrapper" enabled="true" style="flex-grow: 1; display: flex;">
+    <ui:VisualElement name="Wrapper" enabled="true" style="flex-grow: 1; display: none;">
         <ui:VisualElement name="Background" class="Background">
             <ui:VisualElement name="NPCFace" class="NPC_Icon" style="background-color: rgb(255, 255, 255);"/>
             <ui:Label text="" name="Text" class="Text"/>
@@ -10,6 +10,6 @@
             <ui:Button text="Button" name="Answer2" class="AnswerButton"/>
             <ui:Button text="Button" name="Answer3" class="AnswerButton"/>
         </ui:VisualElement>
-        <ui:TextField placeholder-text="filler text" name="TextField" style="top: 92%; position: absolute; left: 28%; display: none; width: 60%; height: 5%;"/>
+        <ui:TextField placeholder-text="" name="TextField" style="top: 82%; position: absolute; left: 28%; display: none; width: 60%; height: 5%; font-size: 25px; white-space: normal;"/>
     </ui:VisualElement>
 </ui:UXML>

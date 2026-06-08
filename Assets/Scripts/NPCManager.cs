@@ -9,7 +9,7 @@ public class NPCManager : MonoBehaviour
 
     [Header("Riferimenti di Sistema")]
     [SerializeField] private OllamaModelHandler modelHandler; // Il gestore della connessione a Ollama
-    //[SerializeField] private DialogueView dialogueView;       // La UI gestita con UI Toolkit
+    [SerializeField] private DialogueView dialogueView;       // La UI gestita con UI Toolkit
 
     // La memoria dinamica di questa specifica istanza di NPC
     private List<string> _dialogueHistory = new List<string>();
@@ -38,7 +38,7 @@ public class NPCManager : MonoBehaviour
         _dialogueHistory.Add($"{npcProfile.npcName}: {greetingData.npc_response}");
 
         // 4. Passa i dati alla DialogueView per aggiornare la UI con testo e bottoni
-        // dialogueView.ShowGreeting(greetingData, this);
+        dialogueView.ShowDialogue(greetingData);
     }
 
     public async Task<DialogueData> SendChoiceAsync(string playerInput)
