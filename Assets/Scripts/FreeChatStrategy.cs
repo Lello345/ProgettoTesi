@@ -2,8 +2,8 @@ using UnityEngine;
 using System.Collections.Generic;
 using System;
 
-[Serializable]
-public class FreeChatStrategy : IDialogueStrategy
+[CreateAssetMenu(fileName = "NewFreeChatStrategy", menuName = "AI Dialogue/Strategie/FreeChat")]
+public class FreeChatStrategy : DialogueStrategySO
 {
     private readonly string freeChatInstructions = 
         "RISPONDI ESCLUSIVAMENTE IN FORMATO JSON.\n" +
@@ -14,7 +14,7 @@ public class FreeChatStrategy : IDialogueStrategy
         "  \"player_choices\": []\n" +
         "}";
 
-    public string FormatPrompt(string NPCstory, string playerInput, List<string> history)
+    public override string FormatPrompt(string NPCstory, string playerInput, List<string> history)
     {
         string context = history.Count > 0 ? string.Join("\n", history) : "Nessun dialogo precedente.";
 

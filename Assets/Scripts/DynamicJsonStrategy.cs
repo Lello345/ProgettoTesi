@@ -2,8 +2,8 @@ using UnityEngine;
 using System.Collections.Generic;
 using System;
 
-[Serializable]
-public class DynamicJsonStrategy : IDialogueStrategy
+[CreateAssetMenu(fileName = "NewDynamicJsonStrategy", menuName = "AI Dialogue/Strategie/DynamicJson")]
+public class DynamicJsonStrategy : DialogueStrategySO
 {
     private readonly string jsonInstructions = 
         "RISPONDI ESCLUSIVAMENTE IN FORMATO JSON.\n" +
@@ -15,7 +15,7 @@ public class DynamicJsonStrategy : IDialogueStrategy
         "}\n" +
         "Genera esattamente 3 opzioni per il giocatore, coerenti con la conversazione.";
 
-    public string FormatPrompt(string NPCstory, string playerInput, List<string> history)
+    public override string FormatPrompt(string NPCstory, string playerInput, List<string> history)
     {
         // Ricostruiamo la cronologia per dare contesto all'IA
         string context = history.Count > 0 ? string.Join("\n", history) : "Nessun dialogo precedente.";
