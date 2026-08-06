@@ -1,0 +1,2847 @@
+fileFormatVersion: 2
+guid: 0750ce3f175c1564abd847a0e7ed22f9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5974645024901836640
+    second: Sheep 33x26_0
+  - first:
+      213: 9162393527271614317
+    second: Sheep 33x26_1
+  - first:
+      213: -5752264707705519683
+    second: Sheep 33x26_2
+  - first:
+      213: -3692028350226881044
+    second: Sheep 33x26_3
+  - first:
+      213: -2173080968107121815
+    second: Sheep 33x26_4
+  - first:
+      213: 3808414518953187890
+    second: Sheep 33x26_5
+  - first:
+      213: 6424536998617040915
+    second: Sheep 33x26_6
+  - first:
+      213: -7817939889508418891
+    second: Sheep 33x26_7
+  - first:
+      213: -2362650351856586306
+    second: Sheep 33x26_8
+  - first:
+      213: 3133773026259959938
+    second: Sheep 33x26_9
+  - first:
+      213: -1205324967930001644
+    second: Sheep 33x26_10
+  - first:
+      213: -4739554323310706060
+    second: Sheep 33x26_11
+  - first:
+      213: 2801612975352866586
+    second: Sheep 33x26_12
+  - first:
+      213: 6251510290734841060
+    second: Sheep 33x26_13
+  - first:
+      213: 7057434463839918116
+    second: Sheep 33x26_14
+  - first:
+      213: -7922799822491962595
+    second: Sheep 33x26_15
+  - first:
+      213: 3538529248118608219
+    second: Sheep 33x26_16
+  - first:
+      213: 1382550978882154269
+    second: Sheep 33x26_17
+  - first:
+      213: 6351597737082934983
+    second: Sheep 33x26_18
+  - first:
+      213: 6158847524922538525
+    second: Sheep 33x26_19
+  - first:
+      213: -4932596337701638232
+    second: Sheep 33x26_20
+  - first:
+      213: -1482828714500609769
+    second: Sheep 33x26_21
+  - first:
+      213: 2280253318609672453
+    second: Sheep 33x26_22
+  - first:
+      213: 3396695031735663826
+    second: Sheep 33x26_23
+  - first:
+      213: -205579094886733188
+    second: Sheep 33x26_24
+  - first:
+      213: 5919094545886909290
+    second: Sheep 33x26_25
+  - first:
+      213: 6268792365444705551
+    second: Sheep 33x26_26
+  - first:
+      213: -5642532913492866819
+    second: Sheep 33x26_27
+  - first:
+      213: 345838817240145767
+    second: Sheep 33x26_28
+  - first:
+      213: -3519680768355318667
+    second: Sheep 33x26_29
+  - first:
+      213: 2988345254947663828
+    second: Sheep 33x26_30
+  - first:
+      213: 5909834484579440610
+    second: Sheep 33x26_31
+  - first:
+      213: -1753946661996497518
+    second: Sheep 33x26_32
+  - first:
+      213: -4969421529005436824
+    second: Sheep 33x26_33
+  - first:
+      213: -1770373802592658209
+    second: Sheep 33x26_34
+  - first:
+      213: -7958853997041676125
+    second: Sheep 33x26_35
+  - first:
+      213: -483040063818998684
+    second: Sheep 33x26_36
+  - first:
+      213: -763956195557134677
+    second: Sheep 33x26_37
+  - first:
+      213: 5494506722452266331
+    second: Sheep 33x26_38
+  - first:
+      213: 1621320444236912990
+    second: Sheep 33x26_39
+  - first:
+      213: -4455383890696672484
+    second: Sheep 33x26_40
+  - first:
+      213: -1704853217484463320
+    second: Sheep 33x26_41
+  - first:
+      213: -6528609034586079946
+    second: Sheep 33x26_42
+  - first:
+      213: -8435432440548250452
+    second: Sheep 33x26_43
+  - first:
+      213: -2191334347703395626
+    second: Sheep 33x26_44
+  - first:
+      213: 3551885648078017443
+    second: Sheep 33x26_45
+  - first:
+      213: 1273691178188797918
+    second: Sheep 33x26_46
+  - first:
+      213: -1454930332834800176
+    second: Sheep 33x26_47
+  - first:
+      213: -8298366513232091315
+    second: Sheep 33x26_48
+  - first:
+      213: -4288139569917024889
+    second: Sheep 33x26_49
+  - first:
+      213: 9211151436627316334
+    second: Sheep 33x26_50
+  - first:
+      213: 5936535912695994339
+    second: Sheep 33x26_51
+  - first:
+      213: -3634998524966701272
+    second: Sheep 33x26_52
+  - first:
+      213: 8149627403443530103
+    second: Sheep 33x26_53
+  - first:
+      213: 3019979069024027839
+    second: Sheep 33x26_54
+  - first:
+      213: 7280727823037235771
+    second: Sheep 33x26_55
+  - first:
+      213: 3563759374844083960
+    second: Sheep 33x26_56
+  - first:
+      213: 6286020424498471013
+    second: Sheep 33x26_57
+  - first:
+      213: 5223008374751206211
+    second: Sheep 33x26_58
+  - first:
+      213: 5069562213372974972
+    second: Sheep 33x26_59
+  - first:
+      213: 4001581066605352142
+    second: Sheep 33x26_60
+  - first:
+      213: -4856718972838125013
+    second: Sheep 33x26_61
+  - first:
+      213: 4888815662796335361
+    second: Sheep 33x26_62
+  - first:
+      213: -9022497334060739323
+    second: Sheep 33x26_63
+  - first:
+      213: -4599214830875009466
+    second: Sheep 33x26_64
+  - first:
+      213: 7136084509959282278
+    second: Sheep 33x26_65
+  - first:
+      213: -8864370030091775173
+    second: Sheep 33x26_66
+  - first:
+      213: -8501343778696664821
+    second: Sheep 33x26_67
+  - first:
+      213: -1282560796800713174
+    second: Sheep 33x26_68
+  - first:
+      213: -6837571306334475565
+    second: Sheep 33x26_69
+  - first:
+      213: 5725988041753404199
+    second: Sheep 33x26_70
+  - first:
+      213: 8963827106882121893
+    second: Sheep 33x26_71
+  - first:
+      213: 3799729041534269305
+    second: Sheep 33x26_72
+  - first:
+      213: 4176146862371901274
+    second: Sheep 33x26_73
+  - first:
+      213: -1560341255828708536
+    second: Sheep 33x26_74
+  - first:
+      213: 3494872493537087521
+    second: Sheep 33x26_75
+  - first:
+      213: -4720972971298002796
+    second: Sheep 33x26_76
+  - first:
+      213: 7950180269382655659
+    second: Sheep 33x26_77
+  - first:
+      213: 3752853305969116105
+    second: Sheep 33x26_78
+  - first:
+      213: 3117740003397568619
+    second: Sheep 33x26_79
+  - first:
+      213: -6837982622023380687
+    second: Sheep 33x26_80
+  - first:
+      213: -8372432046613987159
+    second: Sheep 33x26_81
+  - first:
+      213: -6369048881463373045
+    second: Sheep 33x26_82
+  - first:
+      213: -3444330521416986998
+    second: Sheep 33x26_83
+  - first:
+      213: -6742702833042874939
+    second: Sheep 33x26_84
+  - first:
+      213: 437069150111604083
+    second: Sheep 33x26_85
+  - first:
+      213: 7316277899370773621
+    second: Sheep 33x26_86
+  - first:
+      213: 8711292018349668103
+    second: Sheep 33x26_87
+  - first:
+      213: -7695380780114665939
+    second: Sheep 33x26_88
+  - first:
+      213: 5311143653994797963
+    second: Sheep 33x26_89
+  - first:
+      213: -1917846508274910948
+    second: Sheep 33x26_90
+  - first:
+      213: 2253126424692927043
+    second: Sheep 33x26_91
+  - first:
+      213: -6539226704094902822
+    second: Sheep 33x26_92
+  - first:
+      213: 8034629902666598192
+    second: Sheep 33x26_93
+  - first:
+      213: 4390322773525256570
+    second: Sheep 33x26_94
+  - first:
+      213: 8993909334036498156
+    second: Sheep 33x26_95
+  - first:
+      213: -7674281297823484368
+    second: Sheep 33x26_96
+  - first:
+      213: 8148459474873528188
+    second: Sheep 33x26_97
+  - first:
+      213: 4035257349455076340
+    second: Sheep 33x26_98
+  - first:
+      213: 4496206814075017396
+    second: Sheep 33x26_99
+  - first:
+      213: -752682083324492221
+    second: Sheep 33x26_100
+  - first:
+      213: -4558052633358258376
+    second: Sheep 33x26_101
+  - first:
+      213: 9175102829222737366
+    second: Sheep 33x26_102
+  - first:
+      213: -6982388096428717299
+    second: Sheep 33x26_103
+  - first:
+      213: 22780220798462830
+    second: Sheep 33x26_104
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sheep 33x26_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 391
+        width: 33
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06f2450cef33ae250800000000000000
+      internalID: 5974645024901836640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_1
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 391
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d67ec5d5e5c572f70800000000000000
+      internalID: 9162393527271614317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_2
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 391
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db14233a9b9db20b0800000000000000
+      internalID: -5752264707705519683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 365
+        width: 33
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce52e04d6c743ccc0800000000000000
+      internalID: -3692028350226881044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_4
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 365
+        width: 34
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96320db7f5aa7d1e0800000000000000
+      internalID: -2173080968107121815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_5
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 365
+        width: 33
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23a15afb3d43ad430800000000000000
+      internalID: 3808414518953187890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_6
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 365
+        width: 33
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3184ce09c5a882950800000000000000
+      internalID: 6424536998617040915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_7
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 339
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ba7e7a7719118390800000000000000
+      internalID: -7817939889508418891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_8
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 339
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb1f229d50e263fd0800000000000000
+      internalID: -2362650351856586306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_9
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 339
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2800de4c6f56d7b20800000000000000
+      internalID: 3133773026259959938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_10
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 339
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4178f97e353d54fe0800000000000000
+      internalID: -1205324967930001644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_11
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 313
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47206654478b93eb0800000000000000
+      internalID: -4739554323310706060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_12
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 313
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a176802582451e620800000000000000
+      internalID: 2801612975352866586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_13
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 313
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ecf2fccc73d1c650800000000000000
+      internalID: 6251510290734841060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_14
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 313
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42817c2c04b01f160800000000000000
+      internalID: 7057434463839918116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 287
+        width: 33
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d13b6d9c98f8c0290800000000000000
+      internalID: -7922799822491962595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_16
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 287
+        width: 33
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b51907d6a916b1130800000000000000
+      internalID: 3538529248118608219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_17
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 287
+        width: 33
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1fa32c4acecf2310800000000000000
+      internalID: 1382550978882154269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_18
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 287
+        width: 33
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c6d00b5d78652850800000000000000
+      internalID: 6351597737082934983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_19
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 287
+        width: 34
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1a3dc4613f987550800000000000000
+      internalID: 6158847524922538525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_20
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 287
+        width: 33
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8afa6eec3c5eb8bb0800000000000000
+      internalID: -4932596337701638232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_21
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 261
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7192179f32feb6be0800000000000000
+      internalID: -1482828714500609769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_22
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 235
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50992addf4615af10800000000000000
+      internalID: 2280253318609672453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_23
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 260
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dc30f8822c732f20800000000000000
+      internalID: 3396695031735663826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_24
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 234
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7aa70407e2a52df0800000000000000
+      internalID: -205579094886733188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_25
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 260
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a639a87f029d42250800000000000000
+      internalID: 5919094545886909290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_26
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 261
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0d230161793ff650800000000000000
+      internalID: 6268792365444705551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_27
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 260
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df8cec9e532b1b1b0800000000000000
+      internalID: -5642532913492866819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_28
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 260
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76fd32b629aacc400800000000000000
+      internalID: 345838817240145767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_29
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 235
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 574486f3df4972fc0800000000000000
+      internalID: -3519680768355318667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_30
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 235
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4df216b2d2cb87920800000000000000
+      internalID: 2988345254947663828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_31
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 235
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e716bee623f30250800000000000000
+      internalID: 5909834484579440610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_32
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 234
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29577b0cdcab8a7e0800000000000000
+      internalID: -1753946661996497518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 209
+        width: 33
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 860d370d271190bb0800000000000000
+      internalID: -4969421529005436824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_34
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 209
+        width: 33
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdc9ec8086e5e67e0800000000000000
+      internalID: -1770373802592658209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_35
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 209
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a0122f15787c8190800000000000000
+      internalID: -7958853997041676125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_36
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 209
+        width: 34
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46c59c70f95eb49f0800000000000000
+      internalID: -483040063818998684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_37
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 209
+        width: 34
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baeabd343e1e565f0800000000000000
+      internalID: -763956195557134677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_38
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 209
+        width: 34
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5d53cfb0c8604c40800000000000000
+      internalID: 5494506722452266331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_39
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 209
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e59d1d99a56108610800000000000000
+      internalID: 1621320444236912990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_40
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 209
+        width: 34
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1be60105fb4b22c0800000000000000
+      internalID: -4455383890696672484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_41
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 209
+        width: 34
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82328a908052758e0800000000000000
+      internalID: -1704853217484463320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_42
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 209
+        width: 34
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63d37105ca8b565a0800000000000000
+      internalID: -6528609034586079946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_43
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 209
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caca05e53e25fea80800000000000000
+      internalID: -8435432440548250452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_44
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 209
+        width: 34
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dad60d5501d691e0800000000000000
+      internalID: -2191334347703395626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_45
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 209
+        width: 34
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a39f70ad25da4130800000000000000
+      internalID: 3551885648078017443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_46
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 209
+        width: 34
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed7fd75d06f0da110800000000000000
+      internalID: 1273691178188797918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_47
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 183
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ddd072229c0fcbe0800000000000000
+      internalID: -1454930332834800176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_48
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 183
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d47edc27f9746dc80800000000000000
+      internalID: -8298366513232091315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_49
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 183
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 785accbd7c77d74c0800000000000000
+      internalID: -4288139569917024889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_50
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 183
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6e0088cd6594df70800000000000000
+      internalID: 9211151436627316334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_51
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 182
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e71890a5ffc26250800000000000000
+      internalID: 5936535912695994339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_52
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 182
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8277a40c914ed8dc0800000000000000
+      internalID: -3634998524966701272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_53
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 183
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7796a02e1fa491170800000000000000
+      internalID: 8149627403443530103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_54
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 183
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb4ca4676fe19e920800000000000000
+      internalID: 3019979069024027839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_55
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 182
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b32007e41675a0560800000000000000
+      internalID: 7280727823037235771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_56
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 182
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8febc821544057130800000000000000
+      internalID: 3563759374844083960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_57
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 183
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 560e415754e6c3750800000000000000
+      internalID: 6286020424498471013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_58
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 183
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34b9fe3b17adb7840800000000000000
+      internalID: 5223008374751206211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_59
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 182
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c77d6de29f3ba5640800000000000000
+      internalID: 5069562213372974972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_60
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 182
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec4d0fe57c8788730800000000000000
+      internalID: 4001581066605352142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_61
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 157
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b22651283d7799cb0800000000000000
+      internalID: -4856718972838125013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_62
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 157
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 109675971ff88d340800000000000000
+      internalID: 4888815662796335361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_63
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 157
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50596685a76a9c280800000000000000
+      internalID: -9022497334060739323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_64
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 157
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64e9cff9a7e4c20c0800000000000000
+      internalID: -4599214830875009466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_65
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 157
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66e5a4f9d07780360800000000000000
+      internalID: 7136084509959282278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_66
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 157
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b33d2ce4c6e6bf480800000000000000
+      internalID: -8864370030091775173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_67
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 157
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b09ee4510e8250a80800000000000000
+      internalID: -8501343778696664821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_68
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 157
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2ef9d720cd633ee0800000000000000
+      internalID: -1282560796800713174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_69
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 157
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3daa787bf111c11a0800000000000000
+      internalID: -6837571306334475565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_70
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 157
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 723a8d059cbc67f40800000000000000
+      internalID: 5725988041753404199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_71
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 157
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a0f9b5e249e56c70800000000000000
+      internalID: 8963827106882121893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_72
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 157
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 977b2637e695bb430800000000000000
+      internalID: 3799729041534269305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_73
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 157
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5f0a85f177a4f930800000000000000
+      internalID: 4176146862371901274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_74
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 157
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84361f515ed885ae0800000000000000
+      internalID: -1560341255828708536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_75
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 157
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 120df882408408030800000000000000
+      internalID: 3494872493537087521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_76
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 131
+        width: 33
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 498ef8b681cbb7eb0800000000000000
+      internalID: -4720972971298002796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_77
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 131
+        width: 33
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bae5fd845d6b45e60800000000000000
+      internalID: 7950180269382655659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_78
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 131
+        width: 34
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c38074c230d41430800000000000000
+      internalID: 3752853305969116105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_79
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 131
+        width: 33
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b68898cb300744b20800000000000000
+      internalID: 3117740003397568619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_80
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 105
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1319002d80b9a11a0800000000000000
+      internalID: -6837982622023380687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_81
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 105
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a00a73a9652fcb80800000000000000
+      internalID: -8372432046613987159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_82
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 105
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b03d64779c79c97a0800000000000000
+      internalID: -6369048881463373045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_83
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 105
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8e87edb3a74330d0800000000000000
+      internalID: -3444330521416986998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_84
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 79
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cd957a6f7b1d62a0800000000000000
+      internalID: -6742702833042874939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_85
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 79
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37d1faa8318c01600800000000000000
+      internalID: 437069150111604083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_86
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 79
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57c39067cf3a88560800000000000000
+      internalID: 7316277899370773621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_87
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 79
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7077d60bfe9b4e870800000000000000
+      internalID: 8711292018349668103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_88
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 53
+        width: 33
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2e95edc3f3843590800000000000000
+      internalID: -7695380780114665939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_89
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 53
+        width: 33
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8b1e6f7309f4b940800000000000000
+      internalID: 5311143653994797963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_90
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 53
+        width: 34
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c19fc8c03c07265e0800000000000000
+      internalID: -1917846508274910948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_91
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 53
+        width: 33
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34a2ed1bb86b44f10800000000000000
+      internalID: 2253126424692927043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_92
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 53
+        width: 34
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad5ccac75ffff35a0800000000000000
+      internalID: -6539226704094902822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_93
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 53
+        width: 34
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0378c22c35db08f60800000000000000
+      internalID: 8034629902666598192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_94
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 27
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a79d7453d4f8dec30800000000000000
+      internalID: 4390322773525256570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_95
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 27
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce6c05533e8c0dc70800000000000000
+      internalID: 8993909334036498156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_96
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 27
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 036bec8d1d97f7590800000000000000
+      internalID: -7674281297823484368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_97
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 27
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7fa08258b4251170800000000000000
+      internalID: 8148459474873528188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_98
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 27
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fbdd8bfd2d100830800000000000000
+      internalID: 4035257349455076340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_99
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 27
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b8d1a5864cb56e30800000000000000
+      internalID: 4496206814075017396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_100
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34684a212afed85f0800000000000000
+      internalID: -752682083324492221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_101
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 1
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83fa521974b8eb0c0800000000000000
+      internalID: -4558052633358258376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_102
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 1
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d5b0815963845f70800000000000000
+      internalID: 9175102829222737366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_103
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 1
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0b43744503991f90800000000000000
+      internalID: -6982388096428717299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheep 33x26_104
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 1
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6be8987d7ee05000800000000000000
+      internalID: 22780220798462830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Sheep 33x26_0: 5974645024901836640
+      Sheep 33x26_1: 9162393527271614317
+      Sheep 33x26_10: -1205324967930001644
+      Sheep 33x26_100: -752682083324492221
+      Sheep 33x26_101: -4558052633358258376
+      Sheep 33x26_102: 9175102829222737366
+      Sheep 33x26_103: -6982388096428717299
+      Sheep 33x26_104: 22780220798462830
+      Sheep 33x26_11: -4739554323310706060
+      Sheep 33x26_12: 2801612975352866586
+      Sheep 33x26_13: 6251510290734841060
+      Sheep 33x26_14: 7057434463839918116
+      Sheep 33x26_15: -7922799822491962595
+      Sheep 33x26_16: 3538529248118608219
+      Sheep 33x26_17: 1382550978882154269
+      Sheep 33x26_18: 6351597737082934983
+      Sheep 33x26_19: 6158847524922538525
+      Sheep 33x26_2: -5752264707705519683
+      Sheep 33x26_20: -4932596337701638232
+      Sheep 33x26_21: -1482828714500609769
+      Sheep 33x26_22: 2280253318609672453
+      Sheep 33x26_23: 3396695031735663826
+      Sheep 33x26_24: -205579094886733188
+      Sheep 33x26_25: 5919094545886909290
+      Sheep 33x26_26: 6268792365444705551
+      Sheep 33x26_27: -5642532913492866819
+      Sheep 33x26_28: 345838817240145767
+      Sheep 33x26_29: -3519680768355318667
+      Sheep 33x26_3: -3692028350226881044
+      Sheep 33x26_30: 2988345254947663828
+      Sheep 33x26_31: 5909834484579440610
+      Sheep 33x26_32: -1753946661996497518
+      Sheep 33x26_33: -4969421529005436824
+      Sheep 33x26_34: -1770373802592658209
+      Sheep 33x26_35: -7958853997041676125
+      Sheep 33x26_36: -483040063818998684
+      Sheep 33x26_37: -763956195557134677
+      Sheep 33x26_38: 5494506722452266331
+      Sheep 33x26_39: 1621320444236912990
+      Sheep 33x26_4: -2173080968107121815
+      Sheep 33x26_40: -4455383890696672484
+      Sheep 33x26_41: -1704853217484463320
+      Sheep 33x26_42: -6528609034586079946
+      Sheep 33x26_43: -8435432440548250452
+      Sheep 33x26_44: -2191334347703395626
+      Sheep 33x26_45: 3551885648078017443
+      Sheep 33x26_46: 1273691178188797918
+      Sheep 33x26_47: -1454930332834800176
+      Sheep 33x26_48: -8298366513232091315
+      Sheep 33x26_49: -4288139569917024889
+      Sheep 33x26_5: 3808414518953187890
+      Sheep 33x26_50: 9211151436627316334
+      Sheep 33x26_51: 5936535912695994339
+      Sheep 33x26_52: -3634998524966701272
+      Sheep 33x26_53: 8149627403443530103
+      Sheep 33x26_54: 3019979069024027839
+      Sheep 33x26_55: 7280727823037235771
+      Sheep 33x26_56: 3563759374844083960
+      Sheep 33x26_57: 6286020424498471013
+      Sheep 33x26_58: 5223008374751206211
+      Sheep 33x26_59: 5069562213372974972
+      Sheep 33x26_6: 6424536998617040915
+      Sheep 33x26_60: 4001581066605352142
+      Sheep 33x26_61: -4856718972838125013
+      Sheep 33x26_62: 4888815662796335361
+      Sheep 33x26_63: -9022497334060739323
+      Sheep 33x26_64: -4599214830875009466
+      Sheep 33x26_65: 7136084509959282278
+      Sheep 33x26_66: -8864370030091775173
+      Sheep 33x26_67: -8501343778696664821
+      Sheep 33x26_68: -1282560796800713174
+      Sheep 33x26_69: -6837571306334475565
+      Sheep 33x26_7: -7817939889508418891
+      Sheep 33x26_70: 5725988041753404199
+      Sheep 33x26_71: 8963827106882121893
+      Sheep 33x26_72: 3799729041534269305
+      Sheep 33x26_73: 4176146862371901274
+      Sheep 33x26_74: -1560341255828708536
+      Sheep 33x26_75: 3494872493537087521
+      Sheep 33x26_76: -4720972971298002796
+      Sheep 33x26_77: 7950180269382655659
+      Sheep 33x26_78: 3752853305969116105
+      Sheep 33x26_79: 3117740003397568619
+      Sheep 33x26_8: -2362650351856586306
+      Sheep 33x26_80: -6837982622023380687
+      Sheep 33x26_81: -8372432046613987159
+      Sheep 33x26_82: -6369048881463373045
+      Sheep 33x26_83: -3444330521416986998
+      Sheep 33x26_84: -6742702833042874939
+      Sheep 33x26_85: 437069150111604083
+      Sheep 33x26_86: 7316277899370773621
+      Sheep 33x26_87: 8711292018349668103
+      Sheep 33x26_88: -7695380780114665939
+      Sheep 33x26_89: 5311143653994797963
+      Sheep 33x26_9: 3133773026259959938
+      Sheep 33x26_90: -1917846508274910948
+      Sheep 33x26_91: 2253126424692927043
+      Sheep 33x26_92: -6539226704094902822
+      Sheep 33x26_93: 8034629902666598192
+      Sheep 33x26_94: 4390322773525256570
+      Sheep 33x26_95: 8993909334036498156
+      Sheep 33x26_96: -7674281297823484368
+      Sheep 33x26_97: 8148459474873528188
+      Sheep 33x26_98: 4035257349455076340
+      Sheep 33x26_99: 4496206814075017396
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
