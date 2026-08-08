@@ -60,7 +60,7 @@ public class NPCManager : MonoBehaviour
 
         return newDialogueNode;
     }
-
+    
     private DialogueData ParseOllamaResponse(string rawResponse)
     {
         try
