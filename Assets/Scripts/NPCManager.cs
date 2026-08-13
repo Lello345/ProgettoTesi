@@ -1,8 +1,9 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.UIElements;
 
-public class NPCManager : MonoBehaviour
+public class NPCManager : MonoBehaviour, IInteractable
 {
     [Header("Configurazione Dati")]
     [SerializeField] private NPCProfileSO npcProfile; // Trascina qui lo ScriptableObject (es. Elion)
@@ -13,10 +14,34 @@ public class NPCManager : MonoBehaviour
 
     // La memoria dinamica di questa specifica istanza di NPC
     private List<string> _dialogueHistory = new List<string>();
+    private DialogueData _currentDialogueNode; // Memorizza l'ultimo nodo di dialogo ricevuto dall'IA
 
     // Proprietà pubblica per permettere ad altri script (es. il Player) di leggere i dati statici
     public NPCProfileSO Profile => npcProfile;
-    
+
+
+    public void Interact()
+    {
+        if (_dialogueHistory.Count == 0)
+        {
+            InitInteraction();
+        }
+        else
+        {
+            dialogueView.ShowDialogue(_currentDialogueNode);
+        }
+    }
+    public bool CanInteract()
+    {
+        if (dialogueView.wrapper.style.display == DisplayStyle.Flex)
+        {
+            return false; // Se la UI è già aperta, non permettere ulteriori interazioni
+        }else
+        {
+            return true; // Altrimenti, permetti l'interazione
+        }
+    }
+
     public void InitInteraction()
     {
         if (npcProfile == null)
@@ -39,6 +64,7 @@ public class NPCManager : MonoBehaviour
 
         // 4. Passa i dati alla DialogueView per aggiornare la UI con testo e bottoni
         dialogueView.ShowDialogue(greetingData);
+        _currentDialogueNode = greetingData; // Aggiorna il nodo corrente
     }
 
     public async Task<DialogueData> SendChoiceAsync(string playerInput)
@@ -58,6 +84,7 @@ public class NPCManager : MonoBehaviour
         // 5. Salva la risposta dell'NPC nella cronologia per il prossimo turno
         _dialogueHistory.Add($"{npcProfile.npcName}: {newDialogueNode.npc_response}");
 
+        _currentDialogueNode = newDialogueNode;
         return newDialogueNode;
     }
     

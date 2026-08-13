@@ -1,6 +1,8 @@
+using System;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UIElements;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -12,13 +14,28 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        DialogueView.OnDialogueOpened += DisableMovement;
+        DialogueView.OnDialogueClosed += EnableMovement;
     }
-    
+
+    private void EnableMovement()
+    {
+        InputActionMap playerActionMap = GetComponent<PlayerInput>().actions.FindActionMap("Player");
+        playerActionMap?.Enable();
+    }
+
+    private void DisableMovement()
+    {
+        InputActionMap playerActionMap = GetComponent<PlayerInput>().actions.FindActionMap("Player");
+        playerActionMap?.Disable();
+    }
+
     // Update is called once per frame
     void Update()
     {
         rb.linearVelocity = moveInput * movementSpeed;
     }
+
 
     public void Move(InputAction.CallbackContext context)
     {

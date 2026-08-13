@@ -5,12 +5,14 @@ using UnityEngine.UIElements;
 public class DialogueView : MonoBehaviour
 {
     [SerializeField] private NPCManager npcManager; // Riferimento al NPCManager per comunicare le scelte del giocatore
-    private VisualElement wrapper;
+    public VisualElement wrapper;
     private VisualElement npcText;
     private VisualElement playerChoicesContainer;
     private TextField playerInputField;
     private Button[] playerButtons;
     [SerializeField] private UIDocument uiDocument;
+    public static event Action OnDialogueOpened;
+    public static event Action OnDialogueClosed;
 
     private void Start() {
         // Inizializza i riferimenti agli elementi UI
@@ -36,15 +38,10 @@ public class DialogueView : MonoBehaviour
 
     void Update()
     {
-        // Per testare la UI, puoi chiamare npcManager.InitInteraction() quando premi un tasto specifico
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            npcManager.InitInteraction();
-        }
-
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             wrapper.style.display = DisplayStyle.None; // Nascondi il wrapper quando premi ESC
+            OnDialogueClosed?.Invoke();
         }
     }
 
@@ -70,6 +67,7 @@ public class DialogueView : MonoBehaviour
     public void ShowDialogue(DialogueData dialogueData)
     {
         wrapper.style.display = DisplayStyle.Flex; // Mostra il wrapper
+        OnDialogueOpened?.Invoke();
         npcText.Q<Label>().text = dialogueData.npc_response; // Aggiorna il testo dell'NPC
 
         if (dialogueData.player_choices.Count == 3)
