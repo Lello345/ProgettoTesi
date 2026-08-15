@@ -16,7 +16,7 @@
 
 .Text {
     width: 80%;
-    font-size: 15px;
+    font-size: 165%;
     -unity-text-align: upper-left;
     white-space: normal;
     text-overflow: ellipsis;
@@ -39,12 +39,12 @@
 }
 
 .AnswerButton {
-    font-size: 15px;
+    font-size: 165%;
     color: rgb(0, 0, 0);
     -unity-text-align: middle-left;
-    flex-wrap: wrap;
-    align-self: center;
     width: 30%;
-    height: auto;
+    height: 40%;
     white-space: normal;
+    align-self: center;
+    aspect-ratio: auto;
 }

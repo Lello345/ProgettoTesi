@@ -4,15 +4,20 @@ using UnityEngine.UIElements;
 
 public class DialogueView : MonoBehaviour
 {
-    [SerializeField] private NPCManager npcManager; // Riferimento al NPCManager per comunicare le scelte del giocatore
+    //[SerializeField] private NPCManager npcManager; // Riferimento al NPCManager per comunicare le scelte del giocatore
+    
     public VisualElement wrapper;
     private VisualElement npcText;
     private VisualElement playerChoicesContainer;
     private TextField playerInputField;
     private Button[] playerButtons;
+
     [SerializeField] private UIDocument uiDocument;
+
     public static event Action OnDialogueOpened;
     public static event Action OnDialogueClosed;
+
+    public static event Action<string> OnPlayerInputSubmittedEvent;
 
     private void Start() {
         // Inizializza i riferimenti agli elementi UI
@@ -49,8 +54,9 @@ public class DialogueView : MonoBehaviour
     {
         DisplayWaitingState(); // Mostra lo stato di attesa mentre si elabora l'input
         playerInputField.value = ""; // Pulisce il campo di input dopo l'invio
-        DialogueData nextDialogueNode = await npcManager.SendChoiceAsync(playerInputField.value); // Invia l'input del giocatore al NPCManager
-        ShowDialogue(nextDialogueNode); // Aggiorna la UI con la nuova risposta dell'NPC e le eventuali nuove scelte
+        //DialogueData nextDialogueNode = await npcManager.SendChoiceAsync(playerInputField.value); // Invia l'input del giocatore al NPCManager
+        //ShowDialogue(nextDialogueNode); // Aggiorna la UI con la nuova risposta dell'NPC e le eventuali nuove scelte
+        OnPlayerInputSubmittedEvent?.Invoke(playerInputField.value);
     }
 
     private async void OnPlayerChoiceClicked(ClickEvent evt, Button button)
@@ -60,8 +66,9 @@ public class DialogueView : MonoBehaviour
         {
             btn.text = ""; 
         }
-        DialogueData nextDialogueNode = await npcManager.SendChoiceAsync(button.text); // Invia la scelta del giocatore al NPCManager
-        ShowDialogue(nextDialogueNode);
+        //DialogueData nextDialogueNode = await npcManager.SendChoiceAsync(button.text); // Invia la scelta del giocatore al NPCManager
+        //ShowDialogue(nextDialogueNode);
+        OnPlayerInputSubmittedEvent?.Invoke(button.text);
     }
 
     public void ShowDialogue(DialogueData dialogueData)

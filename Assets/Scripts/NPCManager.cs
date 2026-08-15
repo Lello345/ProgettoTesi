@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEngine;
@@ -18,6 +19,22 @@ public class NPCManager : MonoBehaviour, IInteractable
 
     // Proprietà pubblica per permettere ad altri script (es. il Player) di leggere i dati statici
     public NPCProfileSO Profile => npcProfile;
+
+    private void OnEnable()
+    {
+        DialogueView.OnPlayerInputSubmittedEvent += HandlePlayerInput;
+    }
+
+    private async void HandlePlayerInput(string obj)
+    {
+        DialogueData nextNode = await SendChoiceAsync(obj);
+        dialogueView.ShowDialogue(nextNode);
+    }
+
+    private void OnDisable()
+    {
+        DialogueView.OnPlayerInputSubmittedEvent -= HandlePlayerInput;
+    }
 
 
     public void Interact()
