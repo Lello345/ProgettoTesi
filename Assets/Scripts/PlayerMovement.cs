@@ -28,6 +28,10 @@ public class PlayerMovement : MonoBehaviour
     {
         InputActionMap playerActionMap = GetComponent<PlayerInput>().actions.FindActionMap("Player");
         playerActionMap?.Disable();
+
+        moveInput = Vector2.zero;
+        rb.linearVelocity = Vector2.zero;
+        animator.SetBool("isWalking", false);
     }
 
     // Update is called once per frame
@@ -39,16 +43,24 @@ public class PlayerMovement : MonoBehaviour
 
     public void Move(InputAction.CallbackContext context)
     {
-        animator.SetBool("isWalking", true);
-        if (context.canceled)
+        moveInput = context.ReadValue<Vector2>();
+
+        if (context.canceled || moveInput == Vector2.zero)
         {
             animator.SetBool("isWalking", false);
+        }
+        else
+        {
+            animator.SetBool("isWalking", true);
+            
+            // 2. Aggiorna i parametri solo quando il giocatore si sta effettivamente muovendo
+            animator.SetFloat("InputX", moveInput.x);
+            animator.SetFloat("InputY", moveInput.y);
+
+            // 3. Salva l'ultimo input valido per la posizione d'arresto (Idle)
             animator.SetFloat("LastInputX", moveInput.x);
             animator.SetFloat("LastInputY", moveInput.y);
         }
-        moveInput = context.ReadValue<Vector2>();
-        animator.SetFloat("InputX", moveInput.x);
-        animator.SetFloat("InputY", moveInput.y);
 
     }
 }
