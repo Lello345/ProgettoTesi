@@ -10,12 +10,14 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 moveInput;
     private Animator animator;
+    private SpriteRenderer spriteRenderer;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         DialogueView.OnDialogueOpened += DisableMovement;
         DialogueView.OnDialogueClosed += EnableMovement;
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     private void EnableMovement()
@@ -43,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void Move(InputAction.CallbackContext context)
     {
-        moveInput = context.ReadValue<Vector2>();
+        moveInput = context.ReadValue<Vector2>().normalized;
 
         if (context.canceled || moveInput == Vector2.zero)
         {
@@ -60,6 +62,7 @@ public class PlayerMovement : MonoBehaviour
             // 3. Salva l'ultimo input valido per la posizione d'arresto (Idle)
             animator.SetFloat("LastInputX", moveInput.x);
             animator.SetFloat("LastInputY", moveInput.y);
+            
         }
 
     }
