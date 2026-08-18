@@ -40,6 +40,16 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         rb.linearVelocity = moveInput * movementSpeed;
+
+        if (moveInput.x > 0)
+        {
+            spriteRenderer.flipX = true;
+            Debug.Log(moveInput.x);
+        }
+        else if (moveInput.x < 0)
+        {
+            spriteRenderer.flipX = false;
+        }
     }
 
 
