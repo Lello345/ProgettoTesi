@@ -16,6 +16,7 @@ public class NPCManager : MonoBehaviour, IInteractable
     // La memoria dinamica di questa specifica istanza di NPC
     private List<string> _dialogueHistory = new List<string>();
     private DialogueData _currentDialogueNode; // Memorizza l'ultimo nodo di dialogo ricevuto dall'IA
+    private bool _isCurrentSpeaker = false;
 
     // Proprietà pubblica per permettere ad altri script (es. il Player) di leggere i dati statici
     public NPCProfileSO Profile => npcProfile;
@@ -23,10 +24,17 @@ public class NPCManager : MonoBehaviour, IInteractable
     private void OnEnable()
     {
         DialogueView.OnPlayerInputSubmittedEvent += HandlePlayerInput;
+        DialogueView.OnDialogueClosed += HandleDialogueClosed;
+    }
+
+    private void HandleDialogueClosed()
+    {
+        _isCurrentSpeaker = false;
     }
 
     private async void HandlePlayerInput(string obj)
     {
+        if (!_isCurrentSpeaker) return;
         DialogueData nextNode = await SendChoiceAsync(obj);
         dialogueView.ShowDialogue(nextNode);
     }
@@ -39,6 +47,7 @@ public class NPCManager : MonoBehaviour, IInteractable
 
     public void Interact()
     {
+        _isCurrentSpeaker = true;
         if (_dialogueHistory.Count == 0)
         {
             InitInteraction();

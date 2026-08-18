@@ -28,6 +28,12 @@ public class OllamaModelHandler : MonoBehaviour
         public string format; // Utilizzato per forzare il formato "json"
     }
 
+    private async void StartAsync() {
+        // Avviamo il warmup del modello in background per ridurre i tempi di latenza alla prima richiesta
+        await System.Threading.Tasks.Task.Delay(1500);
+        WarmupModel();
+    }
+
     /// <summary>
     /// Invia il prompt a Ollama in modo asincrono e restituisce la stringa JSON "pulita" dell'NPC.
     /// </summary>
@@ -80,6 +86,30 @@ public class OllamaModelHandler : MonoBehaviour
                 Debug.LogError($"[OllamaModelHandler] Errore di connessione: {request.error}");
                 return string.Empty;
             }
+        }
+    }
+
+    public async void WarmupModel()
+    {
+        // Invia una richiesta dummy leggerissima per forzare il caricamento in VRAM
+        OllamaRequestPayload payload = new OllamaRequestPayload
+        {
+            model = this.modelName,
+            prompt = "ping",
+            stream = false
+        };
+
+        string jsonPayload = JsonUtility.ToJson(payload);
+
+        using (UnityWebRequest request = new UnityWebRequest(ollamaUrl, "POST"))
+        {
+            byte[] bodyRaw = Encoding.UTF8.GetBytes(jsonPayload);
+            request.uploadHandler = new UploadHandlerRaw(bodyRaw);
+            request.downloadHandler = new DownloadHandlerBuffer();
+            request.SetRequestHeader("Content-Type", "application/json");
+
+            await request.SendWebRequest();
+            Debug.Log("[Ollama] Modello caricato in VRAM e pronto!");
         }
     }
 }

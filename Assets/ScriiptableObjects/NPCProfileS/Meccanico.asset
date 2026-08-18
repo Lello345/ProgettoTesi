@@ -28,5 +28,10 @@ MonoBehaviour:
     Lessico: Usa paragoni legati alla meccanica, ai motori, alla messa a punto e
     alle batterie scariche.\r\n- Regola di output: Risposte brevi (massimo 3 frasi).
     Chiedi al cliente quale \"rumore strano\" sente nella sua giornata oggi."
-  initialGreetingJson: 
+  initialGreetingJson: "{\r\n  \"npc_response\": \"Ehi, entra pure! Scusa la confusione,
+    stavo solo regolando la pressione a questa vecchia bicicletta. Tu che aria tiri?
+    Dimmi un po', qual \xE8 quel 'rumore strano' che sta facendo battere in testa
+    la tua giornata oggi?\",\r\n  \"player_choices\": [\r\n    \"Ho un guasto da
+    riparare.\",\r\n    \"Sto solo dando un'occhiata.\",\r\n    \"Riesci davvero
+    a riparare tutto?\"\r\n  ]\r\n}"
   dialogueStrategy: {fileID: 11400000, guid: 5d9128afa11e452449cb894f668ea1c3, type: 2}

@@ -62,13 +62,14 @@ public class DialogueView : MonoBehaviour
     private async void OnPlayerChoiceClicked(ClickEvent evt, Button button)
     {
         DisplayWaitingState(); // Mostra lo stato di attesa mentre si elabora la scelta
+        string selectedChoiceText = button.text;
         foreach (var btn in playerButtons)
         {
             btn.text = ""; 
         }
         //DialogueData nextDialogueNode = await npcManager.SendChoiceAsync(button.text); // Invia la scelta del giocatore al NPCManager
         //ShowDialogue(nextDialogueNode);
-        OnPlayerInputSubmittedEvent?.Invoke(button.text);
+        OnPlayerInputSubmittedEvent?.Invoke(selectedChoiceText);
     }
 
     public void ShowDialogue(DialogueData dialogueData)

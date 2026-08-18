@@ -44,7 +44,6 @@ public class PlayerMovement : MonoBehaviour
         if (moveInput.x > 0)
         {
             spriteRenderer.flipX = true;
-            Debug.Log(moveInput.x);
         }
         else if (moveInput.x < 0)
         {

@@ -29,5 +29,10 @@ MonoBehaviour:
     Pieno di riferimenti alla letteratura, alle storie e alla vita di tutti i giorni.\r\n-
     Regola di output: Risposte brevi (massimo 3 frasi). Chiedi sempre al visitatore
     quale genere di storia sta cercando nella sua vita in questo momento."
-  initialGreetingJson: 
+  initialGreetingJson: "{\r\n  \"npc_response\": \"Attento a quella pila di volumi
+    sulla sinistra, viandante... benvenuto nella mia oasi di carta. Qui tra le pagine
+    il tempo scorre a un altro ritmo. Dimmi, quale storia stai cercando per la tua
+    vita in questo momento?\",\r\n  \"player_choices\": [\r\n    \"Cerco solo un
+    buon libro.\",\r\n    \"Sto fuggendo dalla solita routine.\",\r\n    \"Come resiste
+    ancora questo posto?\"\r\n  ]\r\n}"
   dialogueStrategy: {fileID: 11400000, guid: 5fd571861128dd84bad93bdd62d137fa, type: 2}
