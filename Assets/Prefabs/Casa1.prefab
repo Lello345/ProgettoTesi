@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1004267825793888855}
   - component: {fileID: 7221015109263240806}
   - component: {fileID: 5422919756694456636}
-  - component: {fileID: 4200961022849378555}
+  - component: {fileID: 6300948647463939479}
   m_Layer: 0
   m_Name: Casa1
   m_TagString: Untagged
@@ -122,8 +122,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &4200961022849378555
-BoxCollider2D:
+--- !u!60 &6300948647463939479
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -156,7 +156,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.007216215, y: -1.3051715}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -166,8 +166,23 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 3.8595862, y: 2.3021908}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 4.7477713, y: 4}
+      - {x: -4.6875, y: 4}
+      - {x: -4.6875, y: -3.5}
+      - {x: -3.377592, y: -3.5215764}
+      - {x: -3.3776636, y: -2.199068}
+      - {x: -1.5220103, y: -2.1969018}
+      - {x: -1.485712, y: -3.489266}
+      - {x: -0.23065233, y: -3.5}
+      - {x: -0.23288107, y: -2.6875}
+      - {x: -0.43531322, y: -2.6847706}
+      - {x: -0.47428846, y: 1.3385711}
+      - {x: 3.7636845, y: 1.3154774}
+      - {x: 3.75, y: -0.375}
+      - {x: 4.7261953, y: -0.375}
+  m_UseDelaunayMesh: 1
 --- !u!1 &3570594914210628428
 GameObject:
   m_ObjectHideFlags: 0
@@ -195,7 +210,7 @@ Transform:
   m_GameObject: {fileID: 3570594914210628428}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.42, y: -2.78, z: 0}
+  m_LocalPosition: {x: -2.42, y: -3.06, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -246,11 +261,11 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 900763409
-  m_SortingLayer: 5
+  m_SortingLayerID: -44025399
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -4756335130094519594, guid: fa4117e4687b9484f9e52cf9b4405b6b,
+  m_Sprite: {fileID: -4756335130094519594, guid: 8ca7b82a3d8cdbe498e28d6d845b42aa,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
