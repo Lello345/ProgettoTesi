@@ -13,8 +13,17 @@ MonoBehaviour:
   m_Name: MarkDialogue
   m_EditorClassIdentifier: Assembly-CSharp::NPCDialogueSO
   npcName: Mark
-  npcPortrait: {fileID: 0}
+  npcPortrait: {fileID: -855298285791758126, guid: 159246ccfeeeb254ca76f335012c835f,
+    type: 3}
   dialogueLines:
-  - Yo
-  - oi
-  enrich: 0001
+  - Yo?
+  - Yoooo
+  - Noooo
+  endDialogueLines: 000101
+  enrich: 0000
+  dialogueChoices:
+  - dialogueIndex: 0
+    choices:
+    - Si
+    - No
+    nextDialogueIndex: 0100000002000000
