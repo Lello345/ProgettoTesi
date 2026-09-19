@@ -2,7 +2,6 @@ using System;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.UIElements;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -13,10 +12,6 @@ public class PlayerMovement : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
-        DialogueView.OnDialogueOpened += DisableMovement;
-        DialogueView.OnDialogueClosed += EnableMovement;
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
