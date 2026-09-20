@@ -8,6 +8,7 @@ public class NPCDialogueSO : ScriptableObject
     public string[] dialogueLines;
     public bool[] endDialogueLines;
     public bool[] enrich;
+    //public string[] addElicitedResponses; 
     public DialogueChoice[] dialogueChoices;
 }
 

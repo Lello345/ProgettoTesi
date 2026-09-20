@@ -24,12 +24,10 @@ public class NPCManager : MonoBehaviour, IInteractable
 
     public bool CanInteract()
     {
-        Debug.Log("can interact");
         return true;
     }
     public void Interact()
     {
-        Debug.Log("interact");
         if(dialogueData == null)
         {
             return;
@@ -123,7 +121,10 @@ public class NPCManager : MonoBehaviour, IInteractable
     }
 
     /*
-    public async Task<DialogueData> SendChoiceAsync(string playerInput){}
+    private async Task<string> EnrichDialogueWithOllama(string npcLine)
+    {
+        yield return null;
+    }
     */
     
     private DialogueData ParseOllamaResponse(string rawResponse)
@@ -131,9 +132,6 @@ public class NPCManager : MonoBehaviour, IInteractable
         try
         {   
             DialogueData data = JsonUtility.FromJson<DialogueData>(rawResponse);
-            
-            // Sicurezza: se per qualche motivo la lista delle scelte è null (es. Chat Libera)
-            data.player_choices ??= new List<string>();
 
             return data;
         }
