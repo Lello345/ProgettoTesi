@@ -17383,6 +17383,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCManager
   dialogueData: {fileID: 11400000, guid: 9a70ce00808c64a459e8b337c0c45adc, type: 2}
+  backgroundData: {fileID: 11400000, guid: 5834ab7b9e716774497f06ed32b30ff5, type: 2}
   modelHandler: {fileID: 1687781986}
 --- !u!114 &1487854333893196112
 MonoBehaviour:
@@ -17397,6 +17398,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCManager
   dialogueData: {fileID: 0}
+  backgroundData: {fileID: 0}
   modelHandler: {fileID: 1687781986}
 --- !u!1 &1492366938843683564
 GameObject:
