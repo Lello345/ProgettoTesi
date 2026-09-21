@@ -16,14 +16,25 @@ MonoBehaviour:
   npcPortrait: {fileID: -855298285791758126, guid: 159246ccfeeeb254ca76f335012c835f,
     type: 3}
   dialogueLines:
-  - Yo?
+  - Prendimi una mela
   - Yoooo
   - Noooo
-  endDialogueLines: 000101
-  enrich: 0000
+  - Hai gia preso la mela?
+  - Figo la mia mela
+  endDialogueLines: 0001010101
+  enrich:
+  - dialogueIndex: 0
+    addElicitedResponses: []
   dialogueChoices:
   - dialogueIndex: 0
     choices:
     - Si
     - No
     nextDialogueIndex: 0100000002000000
+    givesQuest: 0100
+  questInProgressIndex: 3
+  questCompletedIndex: 4
+  quest: {fileID: 11400000, guid: c7a863baeb08c82469dd5f41deb48e06, type: 2}
+  questCompletions:
+  - dialogueIndex: 3
+    questToComplete: {fileID: 11400000, guid: c7a863baeb08c82469dd5f41deb48e06, type: 2}

@@ -7,16 +7,32 @@ public class NPCDialogueSO : ScriptableObject
     public Sprite npcPortrait;
     public string[] dialogueLines;
     public bool[] endDialogueLines;
-    public bool[] enrich;
-    //public string[] addElicitedResponses; 
+    public Enrichment[] enrich;
     public DialogueChoice[] dialogueChoices;
+    public int questInProgressIndex;
+    public int questCompletedIndex;
+    public Quest quest;
+    public QuestCompletion[] questCompletions;
 }
 
+[System.Serializable]
+public class QuestCompletion
+{
+    public int dialogueIndex;
+    public Quest questToComplete;
+}
+
+[System.Serializable]
+public class Enrichment{
+    public int dialogueIndex;
+    public string[] addElicitedResponses;
+}
 [System.Serializable]
 public class DialogueChoice
 {
     public int dialogueIndex;
     public string[] choices;
     public int[] nextDialogueIndex;
+    public bool[] givesQuest;
 }
 

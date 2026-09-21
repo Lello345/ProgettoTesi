@@ -13,6 +13,13 @@ public class NPCManager : MonoBehaviour, IInteractable
     public NPCBackgroundSO backgroundData;
     private int dialogueIndex;
     private bool isDialogueActive;
+    private enum QuestState
+    {
+        NotStarted,
+        InProgress,
+        Completed
+    }
+    private QuestState questState = QuestState.NotStarted;
     
     [Header("Riferimenti di Sistema")]
     [SerializeField] private OllamaModelHandler modelHandler; // Il gestore della connessione a Ollama
@@ -44,8 +51,23 @@ public class NPCManager : MonoBehaviour, IInteractable
     }
     void StartDialogue()
     {
+        //Sync quest data
+        SyncQuestState();
+        //Set dialogue line based on quest state
+        switch (questState)
+        {
+            case QuestState.NotStarted:
+                dialogueIndex = 0;
+                break;
+            case QuestState.InProgress:
+                dialogueIndex = dialogueData.questInProgressIndex;
+                break;
+            case QuestState.Completed:
+                dialogueIndex = dialogueData.questCompletedIndex;
+                break;
+        }
+
         isDialogueActive = true;
-        dialogueIndex = 0;
 
         dialogueController.SetNpcInfo(dialogueData.npcName, dialogueData.npcPortrait);
 
@@ -53,6 +75,27 @@ public class NPCManager : MonoBehaviour, IInteractable
         //TODO: Stoppa il movimento
 
         TypeLine();
+    }
+
+    private void SyncQuestState()
+    {
+        if (dialogueData.quest == null) return;
+
+        string questID = dialogueData.quest.questID;
+
+        if (QuestController.Instance.IsQuestCompleted(questID))
+        {
+            questState = QuestState.Completed;
+        }
+        else if (QuestController.Instance.IsQuestActive(questID))
+        {
+            questState = QuestState.InProgress;
+        }
+        else
+        {
+            questState = QuestState.NotStarted;
+        }
+
     }
     void NextLine()
     {
@@ -74,6 +117,10 @@ public class NPCManager : MonoBehaviour, IInteractable
             }
         }
 
+        //TODO: Controlla completamento di quest
+
+        //TODO: Controlla arricchimento della riga
+
         if (++dialogueIndex < dialogueData.dialogueLines.Length)
         {
             TypeLine();
@@ -86,22 +133,16 @@ public class NPCManager : MonoBehaviour, IInteractable
 
     void TypeLine()
     {
-        //TODO: Controlla se la riga deve essere arricchita
+        /*TODO: Controlla se la riga deve essere arricchita
         if (dialogueData.enrich.Length > dialogueIndex && dialogueData.enrich[dialogueIndex])
         {
-            //dialogueController.SetDialogueText(EnrichDialogueWithOllama(dialogueData.dialogueLines[dialogueIndex]));
+            dialogueController.SetDialogueText(EnrichDialogueWithOllama(dialogueData.dialogueLines[dialogueIndex]));
         }else
         {
             dialogueController.SetDialogueText(dialogueData.dialogueLines[dialogueIndex]);
         }
-    }
-
-    public void EndDialogue()
-    {
-        isDialogueActive = false;
-        dialogueController.ShowDialogueUI(false);
-        dialogueController.SetDialogueText(string.Empty);
-        //Riprendi il movimento
+        */
+        dialogueController.SetDialogueText(dialogueData.dialogueLines[dialogueIndex]);
     }
 
     void DisplayChoices(DialogueChoice dialogueChoice)
@@ -109,12 +150,18 @@ public class NPCManager : MonoBehaviour, IInteractable
         for (int i = 0; i < dialogueChoice.choices.Length; i++)
         {
             int nextIndex = dialogueChoice.nextDialogueIndex[i];
-            dialogueController.CreateChoiceButton (dialogueChoice.choices[i], () => ChooseOption(nextIndex));
+            bool givesQuest = dialogueChoice.givesQuest[i];
+            dialogueController.CreateChoiceButton (dialogueChoice.choices[i], () => ChooseOption(nextIndex, givesQuest));
         }
     }
 
-    void ChooseOption(int nextIndex)
+    void ChooseOption(int nextIndex, bool givesQuest)
     {
+        if (givesQuest)
+        {
+            QuestController.Instance.AcceptQuest(dialogueData.quest);
+            questState = QuestState.InProgress;
+        }
         dialogueIndex = nextIndex;
         dialogueController.ClearChoices();
         TypeLine();
@@ -141,5 +188,13 @@ public class NPCManager : MonoBehaviour, IInteractable
             // Fallback per non bloccare il gioco in caso di allucinazione del modello
             return new DialogueData("...Non riesco a concentrarmi, la mia mente è offuscata... (Errore Generazione IA)");
         }
+    }
+
+    public void EndDialogue()
+    {
+        isDialogueActive = false;
+        dialogueController.ShowDialogueUI(false);
+        dialogueController.SetDialogueText(string.Empty);
+        //Riprendi il movimento
     }
 }
