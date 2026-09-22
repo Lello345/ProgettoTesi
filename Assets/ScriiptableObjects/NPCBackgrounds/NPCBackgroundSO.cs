@@ -13,4 +13,5 @@ public class NPCBackgroundSO : ScriptableObject
     //Modifiche alle prossime risposte del NPC
     [TextArea(2, 5)]
     public string[] elicitedResponses;
+
 }

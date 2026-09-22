@@ -8,8 +8,13 @@ public class Quest : ScriptableObject
     public string questID;
     public string questName;
     public string description;
-    public List<QuestObjective> objectives;
+    public bool IsCompleted = false;
+    //public List<QuestObjective> objectives;
 
+    private void OnEnable()
+    {
+        IsCompleted = false;
+    }
     private void OnValidate()
     {
         if(string.IsNullOrEmpty(questID))
@@ -18,6 +23,7 @@ public class Quest : ScriptableObject
         }
     }
 
+    /*
     [System.Serializable]
     public class QuestObjective
     {
@@ -55,4 +61,5 @@ public class Quest : ScriptableObject
         public bool IsCompleted => objectives.TrueForAll(obj => obj.IsCompleted);
         public string QuestID => quest.questID;
     }
+    */
 }

@@ -1,6 +1,8 @@
 
+using System.Threading.Tasks;
+
 public interface IInteractable 
 {
-   void Interact();
+   Task Interact();
    bool CanInteract();
 }

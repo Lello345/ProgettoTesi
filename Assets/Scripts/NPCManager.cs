@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using TMPro;
 using UnityEngine;
@@ -9,6 +10,7 @@ public class NPCManager : MonoBehaviour, IInteractable
 {
     [Header("Configurazione Dati")]
     private DialogueController dialogueController;
+    private PromptController promptController;
     public NPCDialogueSO dialogueData;
     public NPCBackgroundSO backgroundData;
     private int dialogueIndex;
@@ -33,7 +35,7 @@ public class NPCManager : MonoBehaviour, IInteractable
     {
         return true;
     }
-    public void Interact()
+    public async Task Interact()
     {
         if(dialogueData == null)
         {
@@ -42,14 +44,14 @@ public class NPCManager : MonoBehaviour, IInteractable
 
         if (!isDialogueActive)
         {
-            StartDialogue();
+            await StartDialogue();
         }
         else
         {
-            NextLine();
+            await NextLine();
         }
     }
-    void StartDialogue()
+    async Task StartDialogue()
     {
         //Sync quest data
         SyncQuestState();
@@ -74,7 +76,7 @@ public class NPCManager : MonoBehaviour, IInteractable
         dialogueController.ShowDialogueUI(true);
         //TODO: Stoppa il movimento
 
-        TypeLine();
+        await TypeLineAsync();
     }
 
     private void SyncQuestState()
@@ -97,9 +99,25 @@ public class NPCManager : MonoBehaviour, IInteractable
         }
 
     }
-    void NextLine()
+    async Task NextLine()
     {
         dialogueController.ClearChoices();
+
+        //Check if choices and display
+        foreach(DialogueChoice dialogueChoice in dialogueData.dialogueChoices)
+        {
+            if (dialogueChoice.dialogueIndex == dialogueIndex)
+            {
+                await DisplayChoices(dialogueChoice);
+                return;
+            }
+            QuestCompletion questCompletition = dialogueChoice.questCompletion;
+            if (questCompletition.questToComplete != null && questCompletition.dialogueIndexThatCompletesQuest == dialogueIndex)
+            {
+                QuestController.Instance.CompleteQuest(questCompletition.questToComplete.questID);
+                break;
+            }
+        }
         //Check end dialogue lines
         if (dialogueData.endDialogueLines.Length > dialogueIndex && dialogueData.endDialogueLines[dialogueIndex])
         {
@@ -107,23 +125,9 @@ public class NPCManager : MonoBehaviour, IInteractable
             return;
         }
 
-        //Check if choices and display
-        foreach(DialogueChoice dialogueChoice in dialogueData.dialogueChoices)
-        {
-            if (dialogueChoice.dialogueIndex == dialogueIndex)
-            {
-                DisplayChoices(dialogueChoice);
-                return;
-            }
-        }
-
-        //TODO: Controlla completamento di quest
-
-        //TODO: Controlla arricchimento della riga
-
         if (++dialogueIndex < dialogueData.dialogueLines.Length)
         {
-            TypeLine();
+            await TypeLineAsync();
         }
         else
         {
@@ -131,31 +135,46 @@ public class NPCManager : MonoBehaviour, IInteractable
         }
     }
 
-    void TypeLine()
+    async Task TypeLineAsync()
     {
-        /*TODO: Controlla se la riga deve essere arricchita
-        if (dialogueData.enrich.Length > dialogueIndex && dialogueData.enrich[dialogueIndex])
+        foreach (Enrichment enrichment in dialogueData.enrich)
         {
-            dialogueController.SetDialogueText(EnrichDialogueWithOllama(dialogueData.dialogueLines[dialogueIndex]));
-        }else
-        {
-            dialogueController.SetDialogueText(dialogueData.dialogueLines[dialogueIndex]);
+            if (enrichment.dialogueIndex == dialogueIndex)
+            {
+                if (enrichment.addElicitedResponses.Length > 0){
+                    backgroundData.elicitedResponses = backgroundData.elicitedResponses.Union(enrichment.addElicitedResponses).ToArray();
+                }
+                // 1. Mostra subito un placeholder
+                dialogueController.SetDialogueText("Pensando...");
+
+                // 2. Attende la risposta da Ollama
+                string enrichedText = await EnrichDialogueWithOllama(dialogueData.dialogueLines[dialogueIndex]);
+                
+                backgroundData.elicitedResponses = backgroundData.elicitedResponses.Except(enrichment.addElicitedResponses).ToArray();
+                // 3. Aggiorna il testo finale
+                dialogueController.SetDialogueText(enrichedText);
+                return;
+                
+            }
         }
-        */
         dialogueController.SetDialogueText(dialogueData.dialogueLines[dialogueIndex]);
     }
 
-    void DisplayChoices(DialogueChoice dialogueChoice)
+    async Task DisplayChoices(DialogueChoice dialogueChoice)
     {
         for (int i = 0; i < dialogueChoice.choices.Length; i++)
         {
-            int nextIndex = dialogueChoice.nextDialogueIndex[i];
-            bool givesQuest = dialogueChoice.givesQuest[i];
-            dialogueController.CreateChoiceButton (dialogueChoice.choices[i], () => ChooseOption(nextIndex, givesQuest));
+            string questID = dialogueChoice.questCompletion.questToComplete != null ? dialogueChoice.questCompletion.questToComplete.questID : "";
+            if (!(dialogueChoice.questCompletion.choiceIndexThatCompletesQuest == i && QuestController.Instance.IsQuestCompleted(dialogueChoice.questCompletion.questToComplete.questID)))
+            {
+                int nextIndex = dialogueChoice.nextDialogueIndex[i];
+                bool givesQuest = dialogueChoice.givesQuest[i];
+                dialogueController.CreateChoiceButton (dialogueChoice.choices[i], async () => await ChooseOption(nextIndex, givesQuest));
+            }
         }
     }
 
-    void ChooseOption(int nextIndex, bool givesQuest)
+    async Task ChooseOption(int nextIndex, bool givesQuest)
     {
         if (givesQuest)
         {
@@ -164,15 +183,23 @@ public class NPCManager : MonoBehaviour, IInteractable
         }
         dialogueIndex = nextIndex;
         dialogueController.ClearChoices();
-        TypeLine();
+        await TypeLineAsync();
     }
 
-    /*
+    
     private async Task<string> EnrichDialogueWithOllama(string npcLine)
     {
-        yield return null;
+        //TODO: Implementare la logica per inviare la richiesta a Ollama e ricevere la risposta
+        // 1. Prepara la richiesta (Genera il prompt)
+        string fullPrompt = PromptController.Instance.GeneratePrompt(backgroundData.background, backgroundData.elicitedResponses, npcLine);
+        // 2. Invia la richiesta a Ollama e attendi la risposta
+        string rawResponse = await modelHandler.SendPromptAsync(fullPrompt);
+        // 3. Analizza la risposta JSON e ottieni il testo arricchito
+        DialogueData enrichedData = ParseOllamaResponse(rawResponse);
+        // 4. Restituisci il testo arricchito
+        return enrichedData.npc_response;
     }
-    */
+    
     
     private DialogueData ParseOllamaResponse(string rawResponse)
     {

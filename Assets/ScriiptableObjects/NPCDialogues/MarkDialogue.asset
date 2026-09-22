@@ -20,10 +20,10 @@ MonoBehaviour:
   - Yoooo
   - Noooo
   - Hai gia preso la mela?
-  - Figo la mia mela
+  - Hai ricevuto la tua mela
   endDialogueLines: 0001010101
   enrich:
-  - dialogueIndex: 0
+  - dialogueIndex: 4
     addElicitedResponses: []
   dialogueChoices:
   - dialogueIndex: 0
@@ -32,9 +32,10 @@ MonoBehaviour:
     - No
     nextDialogueIndex: 0100000002000000
     givesQuest: 0100
+    questCompletion:
+      choiceIndexThatCompletesQuest: -1
+      dialogueIndexThatCompletesQuest: -1
+      questToComplete: {fileID: 0}
   questInProgressIndex: 3
   questCompletedIndex: 4
   quest: {fileID: 11400000, guid: c7a863baeb08c82469dd5f41deb48e06, type: 2}
-  questCompletions:
-  - dialogueIndex: 3
-    questToComplete: {fileID: 11400000, guid: c7a863baeb08c82469dd5f41deb48e06, type: 2}

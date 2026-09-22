@@ -15,8 +15,4 @@ MonoBehaviour:
   questID: 575b96d1-aa1c-4233-a3eb-756fe7eb7212
   questName: Prendi il latte
   description: Prendi il latte da Alex
-  objectives:
-  - objectiveID: 1
-    description: Prendi il latte
-    requiredAmount: 1
-    currentAmount: 0
+  IsCompleted: 0

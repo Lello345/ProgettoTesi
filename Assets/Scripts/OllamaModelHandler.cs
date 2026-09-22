@@ -28,12 +28,18 @@ public class OllamaModelHandler : MonoBehaviour
         public string format; // Utilizzato per forzare il formato "json"
     }
 
-    private async void StartAsync() {
-        // Avviamo il warmup del modello in background per ridurre i tempi di latenza alla prima richiesta
-        await System.Threading.Tasks.Task.Delay(1500);
+    private async void Start() {
+        Debug.Log("[OllamaModelHandler] Start() avviato correttamente.");
+    
+        await Task.Delay(1500);
         WarmupModel();
+
+        // TEST DIRETTISSIMO
+        string testResponse = await SendPromptAsync("Ciao, chi sei?", forceJson: false);
+        Debug.Log($"[OllamaTest] Risposta ricevuta: {testResponse}");
     }
 
+    /*
     /// <summary>
     /// Invia il prompt a Ollama in modo asincrono e restituisce la stringa JSON "pulita" dell'NPC.
     /// </summary>
@@ -88,6 +94,65 @@ public class OllamaModelHandler : MonoBehaviour
             }
         }
     }
+    */
+
+    public async Task<string> SendPromptAsync(string fullPrompt, bool forceJson = true)
+{
+    // FEEDBACK: Segnala in console che la richiesta è partita
+    Debug.Log($"[Ollama] Inviando richiesta... Prompt ({fullPrompt.Length} caratteri). Forzatura JSON: {forceJson}");
+    
+    // CRONOMETRO: Misura il tempo effettivo di risposta
+    System.Diagnostics.Stopwatch stopwatch = System.Diagnostics.Stopwatch.StartNew();
+
+    OllamaRequestPayload payload = new OllamaRequestPayload
+    {
+        model = this.modelName,
+        prompt = fullPrompt,
+        stream = false 
+    };
+
+    if (forceJson)
+    {
+        payload.format = "json"; 
+    }
+
+    string jsonPayload = JsonUtility.ToJson(payload);
+
+    using (UnityWebRequest request = new UnityWebRequest(ollamaUrl, "POST"))
+    {
+        byte[] bodyRaw = Encoding.UTF8.GetBytes(jsonPayload);
+        request.uploadHandler = new UploadHandlerRaw(bodyRaw);
+        request.downloadHandler = new DownloadHandlerBuffer();
+        request.SetRequestHeader("Content-Type", "application/json");
+        
+        // TIMEOUT: Evita che l'operazione attenda all'infinito (es. 60 secondi massimi)
+        request.timeout = 60;
+
+        var operation = request.SendWebRequest();
+
+        while (!operation.isDone)
+        {
+            // Nota: Qui puoi invocare un evento C# per mostrare un'animazione "NPC sta pensando..." sulla UI
+            await Task.Yield(); 
+        }
+
+        stopwatch.Stop();
+
+        if (request.result == UnityWebRequest.Result.Success)
+        {
+            Debug.Log($"[Ollama] Risposta ricevuta con successo in {stopwatch.ElapsedMilliseconds} ms.");
+            string rawServerResponse = request.downloadHandler.text;
+            
+            OllamaRawResponse ollamaJson = JsonUtility.FromJson<OllamaRawResponse>(rawServerResponse);
+            return ollamaJson.response;
+        }
+        else
+        {
+            Debug.LogError($"[Ollama] Errore di connessione dopo {stopwatch.ElapsedMilliseconds} ms: {request.error}");
+            return string.Empty;
+        }
+    }
+}
 
     public async void WarmupModel()
     {

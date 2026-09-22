@@ -12,13 +12,14 @@ public class NPCDialogueSO : ScriptableObject
     public int questInProgressIndex;
     public int questCompletedIndex;
     public Quest quest;
-    public QuestCompletion[] questCompletions;
+    //public QuestCompletion[] questCompletions;
 }
 
 [System.Serializable]
 public class QuestCompletion
 {
-    public int dialogueIndex;
+    public int choiceIndexThatCompletesQuest = -1;
+    public int dialogueIndexThatCompletesQuest = -1;
     public Quest questToComplete;
 }
 
@@ -34,5 +35,8 @@ public class DialogueChoice
     public string[] choices;
     public int[] nextDialogueIndex;
     public bool[] givesQuest;
+    public QuestCompletion questCompletion;
 }
+
+
 

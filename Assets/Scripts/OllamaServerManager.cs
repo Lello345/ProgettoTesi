@@ -36,7 +36,7 @@ public class OllamaServerManager : MonoBehaviour
             {
                 FileName = "ollama",
                 Arguments = "serve",
-                CreateNoWindow = true,
+                CreateNoWindow = false,
                 UseShellExecute = false,
                 RedirectStandardOutput = false, // Impostati a false per evitare il deadlock del buffer
                 RedirectStandardError = false
