@@ -16,23 +16,25 @@ MonoBehaviour:
   npcPortrait: {fileID: 1646375367856145251, guid: 41ece77fe506a6645a9815200579722d,
     type: 3}
   dialogueLines:
-  - 'Salve '
-  - Tutto bene!
+  - Ehi Ehi ragazzo sei venuto nel posto giusto, io vendo tutto quello che ti serve
+  - Va bene comunque, passa a trovarmi se ti serve qualcosa
+  - "Hm \xE8 per quel burbero di Mark vero? "
+  - "Hm va bene va bene, solo perch\xE9 mi sono stancato di quei sassi"
   - Eccolo tieni
-  endDialogueLines: 000101
+  endDialogueLines: 0001000001
   enrich: []
   dialogueChoices:
   - dialogueIndex: 0
     choices:
-    - Come va?
-    - Mi serve del latte.
+    - No grazie
+    - Mi servirebbe del latte
     nextDialogueIndex: 0100000002000000
     givesQuest: 0000
     questCompletion:
       choiceIndexThatCompletesQuest: 1
-      dialogueIndexThatCompletesQuest: 2
+      dialogueIndexThatCompletesQuest: 4
       questToComplete: {fileID: 11400000, guid: c7a863baeb08c82469dd5f41deb48e06,
         type: 2}
-  questInProgressIndex: 0
-  questCompletedIndex: 0
+  questInProgressIndex: -1
+  questCompletedIndex: -1
   quest: {fileID: 0}

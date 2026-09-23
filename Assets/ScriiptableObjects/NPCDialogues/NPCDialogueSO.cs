@@ -12,7 +12,6 @@ public class NPCDialogueSO : ScriptableObject
     public int questInProgressIndex;
     public int questCompletedIndex;
     public Quest quest;
-    //public QuestCompletion[] questCompletions;
 }
 
 [System.Serializable]

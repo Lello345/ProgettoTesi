@@ -16,26 +16,43 @@ MonoBehaviour:
   npcPortrait: {fileID: -855298285791758126, guid: 159246ccfeeeb254ca76f335012c835f,
     type: 3}
   dialogueLines:
-  - Prendimi una mela
-  - Yoooo
-  - Noooo
-  - Hai gia preso la mela?
-  - Hai ricevuto la tua mela
-  endDialogueLines: 0001010101
+  - Ehi ragazzo, hai visto queste rocce?
+  - Vero, sembri un ragazzo forte
+  - se vuoi posso dirti dove ho nascosto il mio piccone che ne dici?
+  - Ma come?!? Ma quelle che stanno bloccando il villaggio
+  - Bene bene prima dovresti prendere del latte dal mio amico qui di fianco
+  - Allora vai via
+  - Ancora non hai preso il latte?!? Vai dal mio amico qui affianco
+  - Ahh finalmente
+  - "Ah si il piccone \xE8 dietro l'albero al centro del villaggio "
+  endDialogueLines: 000000010101010001
   enrich:
-  - dialogueIndex: 4
+  - dialogueIndex: 5
+    addElicitedResponses:
+    - 'Sei molto triste '
+  - dialogueIndex: 6
     addElicitedResponses: []
   dialogueChoices:
   - dialogueIndex: 0
     choices:
+    - Si bloccano le uscite dal villaggio
+    - No quali?
+    nextDialogueIndex: 0100000003000000
+    givesQuest: 0000
+    questCompletion:
+      choiceIndexThatCompletesQuest: -1
+      dialogueIndexThatCompletesQuest: -1
+      questToComplete: {fileID: 0}
+  - dialogueIndex: 2
+    choices:
     - Si
-    - No
-    nextDialogueIndex: 0100000002000000
+    - No non mi va
+    nextDialogueIndex: 0400000005000000
     givesQuest: 0100
     questCompletion:
       choiceIndexThatCompletesQuest: -1
       dialogueIndexThatCompletesQuest: -1
       questToComplete: {fileID: 0}
-  questInProgressIndex: 3
-  questCompletedIndex: 4
+  questInProgressIndex: 6
+  questCompletedIndex: 7
   quest: {fileID: 11400000, guid: c7a863baeb08c82469dd5f41deb48e06, type: 2}

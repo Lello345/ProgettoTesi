@@ -51,6 +51,7 @@ public class NPCManager : MonoBehaviour, IInteractable
             await NextLine();
         }
     }
+
     async Task StartDialogue()
     {
         //Sync quest data
@@ -75,6 +76,7 @@ public class NPCManager : MonoBehaviour, IInteractable
 
         dialogueController.ShowDialogueUI(true);
         //TODO: Stoppa il movimento
+
 
         await TypeLineAsync();
     }
@@ -101,9 +103,10 @@ public class NPCManager : MonoBehaviour, IInteractable
     }
     async Task NextLine()
     {
+        //Pulisce le scelte se presenti in precedenza
         dialogueController.ClearChoices();
 
-        //Check if choices and display
+        //Controlla se a questa linea di dialogo deve mostrare delle linee di dialogo e le mostra
         foreach(DialogueChoice dialogueChoice in dialogueData.dialogueChoices)
         {
             if (dialogueChoice.dialogueIndex == dialogueIndex)
@@ -111,6 +114,7 @@ public class NPCManager : MonoBehaviour, IInteractable
                 await DisplayChoices(dialogueChoice);
                 return;
             }
+            //Controlla se a questa linea di dialogo si deve completare una quest e la completa
             QuestCompletion questCompletition = dialogueChoice.questCompletion;
             if (questCompletition.questToComplete != null && questCompletition.dialogueIndexThatCompletesQuest == dialogueIndex)
             {
@@ -118,13 +122,14 @@ public class NPCManager : MonoBehaviour, IInteractable
                 break;
             }
         }
-        //Check end dialogue lines
+        //Controlla se deve finire il dialogo
         if (dialogueData.endDialogueLines.Length > dialogueIndex && dialogueData.endDialogueLines[dialogueIndex])
         {
             EndDialogue();
             return;
         }
 
+        //Procede normalmente
         if (++dialogueIndex < dialogueData.dialogueLines.Length)
         {
             await TypeLineAsync();
@@ -164,13 +169,18 @@ public class NPCManager : MonoBehaviour, IInteractable
     {
         for (int i = 0; i < dialogueChoice.choices.Length; i++)
         {
+            bool isCompletionChoice = dialogueChoice.questCompletion.choiceIndexThatCompletesQuest == i;
             string questID = dialogueChoice.questCompletion.questToComplete != null ? dialogueChoice.questCompletion.questToComplete.questID : "";
-            if (!(dialogueChoice.questCompletion.choiceIndexThatCompletesQuest == i && QuestController.Instance.IsQuestCompleted(dialogueChoice.questCompletion.questToComplete.questID)))
+            if (isCompletionChoice && !(QuestController.Instance.IsQuestActive(dialogueChoice.questCompletion.questToComplete.questID) && !QuestController.Instance.IsQuestCompleted(dialogueChoice.questCompletion.questToComplete.questID)))
+            {
+                
+            }else
             {
                 int nextIndex = dialogueChoice.nextDialogueIndex[i];
                 bool givesQuest = dialogueChoice.givesQuest[i];
                 dialogueController.CreateChoiceButton (dialogueChoice.choices[i], async () => await ChooseOption(nextIndex, givesQuest));
             }
+            
         }
     }
 
@@ -189,7 +199,6 @@ public class NPCManager : MonoBehaviour, IInteractable
     
     private async Task<string> EnrichDialogueWithOllama(string npcLine)
     {
-        //TODO: Implementare la logica per inviare la richiesta a Ollama e ricevere la risposta
         // 1. Prepara la richiesta (Genera il prompt)
         string fullPrompt = PromptController.Instance.GeneratePrompt(backgroundData.background, backgroundData.elicitedResponses, npcLine);
         // 2. Invia la richiesta a Ollama e attendi la risposta

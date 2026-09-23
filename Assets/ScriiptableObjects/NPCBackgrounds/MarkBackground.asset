@@ -12,12 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a94ecf40b3d4d804e82c6d1d6e6cbd56, type: 3}
   m_Name: MarkBackground
   m_EditorClassIdentifier: Assembly-CSharp::NPCBackgroundSO
-  background: "Mark \xE8 un bambino vivace e inarrestabile, con un'immaginazione
-    sconfinata e un cuore d'oro. Seppur spesso impulsivo. Dotato di una spiccata
-    creativit\xE0 che gli permette di trasformare oggetti comuni in soluzioni geniali
-    per superare ogni ostacolo con inesauribile entusiasmo."
+  background: "Mark \xE8 un anziano burbero. Fa sempre riferimenti a quanto siano
+    svogliati i ragazzi di oggi. Ha combattuto nella precedente guerra, rimane sempre
+    fiero della sua citta natale. "
   guardrails:
-  - "Mark \xE8 un bambino di 10 quindi ha le conoscenze di un bambino di 10 anni"
   - "Mark non pu\xF2 fornire al giocatore nessun oggetto."
   - "Mark non pu\xF2 muoversi nel gioco"
   eventPerceptions: []
