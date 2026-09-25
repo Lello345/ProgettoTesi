@@ -29,7 +29,7 @@ public class OllamaModelHandler : MonoBehaviour
     }
 
     private async void Start() {
-        await Task.Delay(500);
+        await Task.Delay(1500);
         WarmupModel();
     }
 

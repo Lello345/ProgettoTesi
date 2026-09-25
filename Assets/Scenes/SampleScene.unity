@@ -17531,6 +17531,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: OllamaManager
       objectReference: {fileID: 0}
+    - target: {fileID: 6888483188524539656, guid: 79f95c6dfba507148acdbbaa7e3938c2,
+        type: 3}
+      propertyPath: modelName
+      value: gemma3GMC
+      objectReference: {fileID: 0}
     - target: {fileID: 6938490440364566916, guid: 79f95c6dfba507148acdbbaa7e3938c2,
         type: 3}
       propertyPath: m_LocalPosition.x

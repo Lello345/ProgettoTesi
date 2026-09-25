@@ -22,16 +22,16 @@ MonoBehaviour:
   - Ma come?!? Ma quelle che stanno bloccando il villaggio
   - Bene bene prima dovresti prendere del latte dal mio amico qui di fianco
   - Allora vai via
-  - Ancora non hai preso il latte?!? Vai dal mio amico qui affianco
+  - Ancora non hai preso il mio latte?!? Vai dal mio amico qui affianco
   - Ahh finalmente
   - "Ah si il piccone \xE8 dietro l'albero al centro del villaggio "
   endDialogueLines: 000000010101010001
   enrich:
   - dialogueIndex: 5
-    addElicitedResponses:
-    - 'Sei molto triste '
-  - dialogueIndex: 6
     addElicitedResponses: []
+  - dialogueIndex: 6
+    addElicitedResponses:
+    - Menziona la guerra che hai combattuto
   dialogueChoices:
   - dialogueIndex: 0
     choices:
